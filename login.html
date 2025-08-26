@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport settings for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>   
+    <!-- Bootstrap CSS for styling and layout -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- External CSS file for additional styling -->
+    <link rel="stylesheet" href="style/style.css">
+    
+    <style>
+        /* Set the background color and center the login form */
+        body {
+            background-color: #022525;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Make the container take the full height of the viewport */
+        }
+        
+        /* Styling for the login form container */
+        .login-container {
+            background: #0d3b3b;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 350px;
+        }
+        
+        /* Logo image styling */
+        .login-container img {
+            width: 100px;
+            border-radius: 50%; /* Make the logo circular */
+            margin-bottom: 20px;
+        }
+        
+        /* Input fields styling */
+        .form-control {
+            background: #2c5858;
+            border: none;
+            color: white;
+        }
+        
+        /* Placeholder text color for input fields */
+        .form-control::placeholder {
+            color: #a0baba;
+        }
+        
+        /* Login button styling */
+        .btn-login {
+            background: #007bff;
+            color: white;
+            border: none;
+        }
+        
+        /* Button hover effect */
+        .btn-login:hover {
+            background: #0056b3;
+        }
+        
+        /* Styling for the links in the login container */
+        .text-light a {
+            color: #66c2ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Form Container -->
+    <div class="login-container">
+        <!-- Logo Image -->
+        <img src="images/Pros.png" alt="Logo">
+        
+        <!-- Login Form -->
+        <form action="/dashboard/index.html">
+            <!-- Username Input Field -->
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Username" name="Username" required >
+            </div>
+            
+            <!-- Password Input Field -->
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Password" name="Password" required>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-login">Login</button>
+            
+            <!-- Signup Link -->
+            <p class="text-light mt-3">Don't have an account? <a href="signup.html">Signup</a></p>
+            
+            <!-- Forgot Password Link -->
+            <p class="text-light">Forgot password? <a href="forgot-password.html">Click here</a></p>
+        </form>
+    </div>
+</body>
+</html>

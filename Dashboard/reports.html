@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/png" href="../images/site_logo.png">
+
+  <style>
+    /* Adjusts the size of all images */
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Dashboard Container -->
+  <div class="dashboard d-flex">
+
+    <!-- Sidebar Section -->
+    <div class="sidebar p-3">
+      <div class="heads text-center">
+        <h3>R E P O R T S</h3>
+        <img class="rounded-circle" src="../images/Pros.png" alt="Logo" width="80" height="80">
+      </div>
+
+      <!-- Navigation Menu -->
+      <ul class="menu list-unstyled mt-3">
+        <li><a href="index.html" class="d-flex align-items-center text-white text-decoration-none p-2">
+            <img src="../images/dashboard.png" alt="Dashboard Icon"> <span class="ms-2">Dashboard</span>
+          </a></li>
+        <li><a href="products.html" class="d-flex align-items-center text-white text-decoration-none p-2">
+            <img src="../images/product.png" alt="Products Icon"> <span class="ms-2">Products</span>
+          </a></li>
+        <li><a href="accounts.html" class="d-flex align-items-center text-white text-decoration-none p-2">
+            <img src="../images/account.png" alt="Accounts Icon"> <span class="ms-2">Accounts</span>
+          </a></li>
+        <li><a href="reports.html" class="d-flex align-items-center text-white text-decoration-none p-2 active">
+            <img src="../images/reports.png" alt="Reports Icon"> <span class="ms-2">Reports</span>
+          </a></li>
+        <li><a href="settings.html" class="d-flex align-items-center text-white text-decoration-none p-2">
+            <img src="../images/settings.png" alt="Settings Icon"> <span class="ms-2">Settings</span>
+          </a></li>
+        <li><a href="../login.html" class="d-flex align-items-center text-white text-decoration-none p-2">
+            <img src="../images/Logout.png" alt="Logout Icon"> <span class="ms-2">Logout</span>
+          </a></li>
+      </ul>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Main Content Section -->
+    <div class="main-content flex-grow-1">
+      <!-- Topbar Section -->
+      <div class="topbar fixed-top d-flex justify-content-between align-items-center p-3 bg-dark text-white">
+        <div class="search">
+          <input type="text" class="form-control" placeholder="Search...">
+        </div>
+        <div class="user-profile d-flex align-items-center">
+          <span>Gumera, Jorry E.</span>
+          <img src="../images/prof.jpg" alt="User Profile" class="rounded-circle ms-2" width="40" height="40">
+        </div>
+      </div>
+      <!-- Topbar End -->
+
+      <!-- Content Section -->
+      <div class="content mt-5 p-4">
+        <div class="container mt-4">
+          <h1 class="mb-4">Total Sales of Products</h1>
+          <div class="table-responsive">
+            <table class="table table-primary table-striped table-hover">
+              <thead class="table-dark">
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Retail Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">001</th>
+                  <td>Scoreboard</td>
+                  <td>$10.00</td>
+                  <td>$4.75</td>
+                </tr>
+                <tr>
+                  <th scope="row">002</th>
+                  <td>Basketball Hoop</td>
+                  <td>$300.00</td>
+                  <td>$189.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">003</th>
+                  <td colspan="2">Moisture Absorption PU Basketball</td>
+                  <td>$6.50</td>
+                </tr>
+                <tr>
+                  <th scope="row">004</th>
+                  <td>Lakers Jerseys</td>
+                  <td>$9.80</td>
+                  <td>$5.99</td>
+                </tr>
+                <tr>
+                  <th scope="row">005</th>
+                  <td>Basketball Shorts</td>
+                  <td>$20.00</td>
+                  <td>$9.49</td>
+                </tr>
+                <tr>
+                  <th scope="row">006</th>
+                  <td>Sports Headband Sweatband</td>
+                  <td>$2.00</td>
+                  <td>$0.64</td>
+                </tr>
+                <tr>
+                  <th scope="row">007</th>
+                  <td>Elite Double Wide Wrist Band</td>
+                  <td>($79)</td>
+                  <td>$0.84</td>
+                </tr>
+                <tr>
+                  <th scope="row">008</th>
+                  <td>Tabletop Score Flipper</td>
+                  <td>$15.00</td>
+                  <td>$6.99</td>
+                </tr>
+                <tr>
+                  <th scope="row">009</th>
+                  <td>Hesi Low V2</td>
+                  <td>$9.50</td>
+                  <td>$8.50</td>
+                </tr>
+                <tr>
+                  <th scope="row">010</th>
+                  <td>Molten MOLT ball</td>
+                  <td>$79</td>
+                  <td>$68</td>
+                </tr>
+                <tr>
+                  <th scope="row">011</th>
+                  <td>A Crew Socks Elite</td>
+                  <td>$3.3</td>
+                  <td>$2.5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Content End -->
+    </div>
+    <!-- Main Content End -->
+  </div>
+  <!-- Dashboard End -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
